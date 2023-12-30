@@ -9,7 +9,7 @@ This is a simple notes app built with React and Django.
 ## Installation
 1. Clone the repository
 ```
-git clone https://github.com/LondheShubham153/django-notes-app.git
+git clone https://github.com/priyashinde09/django-notes-app.git
 ```
 
 2. Build the app
@@ -20,6 +20,18 @@ docker build -t notes-app .
 3. Run the app
 ```
 docker run -d -p 8000:8000 notes-app:latest
+
+##EKS cluster
+1. deploy deployment file.
+Create deployment.yaml file
+vi deployment
+container port-8000
+apply " kubectl apply -f deployment.yaml" command
+2. deploy service file.
+create service.yaml file
+vi service.yaml
+apply "kubectl apply -f service.yaml" command
+Expose node port as 31000
 ```
 
 ## Nginx
