@@ -5,7 +5,7 @@ pipeline  {
         stage('Checkout Code') {
             steps {
                 // Clone the GitHub repository
-                git branch: 'main', url: 'https://github.com/priyashinde09/dashboard'
+                git branch: 'main', url: 'https://github.com/priyashinde09/django-notes-app'
             }
         }
         stage('Build Docker Image') {
